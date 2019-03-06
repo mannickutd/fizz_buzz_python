@@ -1,14 +1,15 @@
 import math
 
 
-def is_perfect_square(x):
+def is_perfect_square(x:int) -> bool:
     '''
     https://www.geeksforgeeks.org/check-number-fibonacci-number/
     ''' 
     s = int(math.sqrt(x)) 
     return s*s == x
 
-def is_fibonacci(n):
+
+def is_fibonacci(n:int) -> bool:
     '''
     https://www.geeksforgeeks.org/check-number-fibonacci-number/
     '''
