@@ -1,6 +1,7 @@
-from fizz_buzz_python.fizz_buzz_pink_flamingo import is_fizz_buzz_number
+from aiohttp import web
+from fizz_buzz_python import create_app
 
 
 if __name__ == '__main__':
-    for i in range(0, 100):
-        print(is_fizz_buzz_number(i))
+    app = create_app()
+    web.run_app(app)

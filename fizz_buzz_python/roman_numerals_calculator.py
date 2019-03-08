@@ -63,5 +63,5 @@ def roman_numeral_calculator(roman_str:str) -> int:
 			num_str += str(convert_roman_numeral_to_number(roman_numeral))
 		num_str = num_str.replace('^', '**')
 		return eval(num_str)
-	except Exception:
+	except Exception as e:
 		raise ValueError("Unable to calculate value")
